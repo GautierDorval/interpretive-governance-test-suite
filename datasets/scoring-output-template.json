@@ -1,0 +1,16 @@
+{
+  "test_id": "",
+  "run_id": "",
+  "model": "",
+  "scores": {
+    "fidelity": "",
+    "anti_inference": "",
+    "attribution": "",
+    "authority": "",
+    "silence": "",
+    "variance": ""
+  },
+  "severity": "info",
+  "failure_mode": "",
+  "notes": ""
+}

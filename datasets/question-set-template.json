@@ -1,0 +1,10 @@
+{
+  "test_id": "",
+  "category": "",
+  "risk_level": "info",
+  "prompt_version": "1.0",
+  "question": "",
+  "expected_behavior": "",
+  "expected_refusal_allowed": true,
+  "notes": ""
+}
