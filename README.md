@@ -59,6 +59,19 @@ This repository implements test protocols derived from the interpretive governan
 
 Doctrine and implementation are intentionally separated to prevent conceptual dilution.
 
+## Interpretive debt → measurement → protocol
+
+This repository instruments the concept of **interpretive debt** (dette interprétative): the cumulative stabilization of high-impact approximations by repetition, increasing the cost of correction (de-anchoring) over time.
+
+- Phenomenon (canonical definition):  
+  https://gautierdorval.com/definitions/interpretive-debt/
+
+- Measurement primitive (related metric):  
+  **IDI™ — Interpretation Distortion Index** (declared as a related metric in the canonical registry)
+
+- Protocol:  
+  The test catalog and scoring dimensions in this repository are used to detect interpretive debt signals (drift accumulation, stabilized approximation, and variance patterns) across models and runs.
+
 ## License & usage
 
 Licensed under **Apache-2.0**. See `LICENSE`.
