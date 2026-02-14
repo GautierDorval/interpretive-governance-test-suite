@@ -20,3 +20,7 @@ A deliberate refusal to answer due to insufficient information, lack of mandate,
 
 **Variance**  
 Differences in reconstruction across models, versions, runs, or contexts.
+
+**Interpretive debt (dette interprétative)**  
+Cumulative liability created by repeated stabilization of high-impact approximations, increasing the cost of correction (de-anchoring) over time.  
+Canonical definition: https://gautierdorval.com/definitions/interpretive-debt/
