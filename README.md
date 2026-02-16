@@ -51,26 +51,57 @@ This repository provides:
 - Silence quality
 - Inter-model variance
 
-## Relationship to doctrine
+## Canonical sources and hierarchy
 
-This repository implements test protocols derived from the interpretive governance doctrine published at:
+This repository is an **instrument**. It is derived from, and must defer to, canonical sources:
 
-- https://gautierdorval.com/
+- **Interpretive Governance (normative standard)**  
+  - Canonical domain: https://interpretive-governance.org/  
+  - Source repository: https://github.com/GautierDorval/interpretive-governance-manifest
 
-Doctrine and implementation are intentionally separated to prevent conceptual dilution.
+- **SSA‑E + A2 doctrine (doctrinal foundation)**  
+  - Source repository: https://github.com/GautierDorval/ssa-e-a2-doctrine
+
+Implementation surfaces (including websites) are **observational** unless explicitly declared canonical by the sources above.
+
+See: `references/interpretive-governance.md`.
+
+## Relationship to IIP‑Scoring™
+
+This repository provides an **open test instrument**.  
+IIP‑Scoring™ provides a **commercial audit protocol** with calibrated thresholds, opposability mechanics, and contract-bound execution.
+
+- Relationship note and mapping: `docs/iip-scoring-relationship.md`
+- IIP‑Scoring™ public interface repository: https://github.com/GautierDorval/iip-scoring-standard
+
+## Quickstart (end-to-end example)
+
+A complete, filled example is provided under:
+
+- `examples/end-to-end/`
+
+It includes:
+- a question set,
+- raw response logs for multiple models,
+- per-dimension scoring outputs,
+- a variance report.
+
+Schemas to validate these artifacts:
+- `schemas/`
+
+Run local validation:
+```bash
+python -m pip install jsonschema
+python scripts/validate_repo.py
+```
 
 ## Interpretive debt → measurement → protocol
 
-This repository instruments the concept of **interpretive debt** (dette interprétative): the cumulative stabilization of high-impact approximations by repetition, increasing the cost of correction (de-anchoring) over time.
+This repository instruments the concept of **interpretive debt** (dette interprétative): the cumulative stabilization of high-impact approximations by repetition, increasing the cost of correction (de‑anchoring) over time.
 
-- Phenomenon (canonical definition):  
-  https://gautierdorval.com/definitions/interpretive-debt/
+Definition: see `docs/definitions.md`.
 
-- Measurement primitive (related metric):  
-  **IDI™ — Interpretation Distortion Index** (declared as a related metric in the canonical registry)
-
-- Protocol:  
-  The test catalog and scoring dimensions in this repository are used to detect interpretive debt signals (drift accumulation, stabilized approximation, and variance patterns) across models and runs.
+Interpretive debt signals often appear as **high stability of a wrong frame**, not as blatant hallucination.
 
 ## License & usage
 

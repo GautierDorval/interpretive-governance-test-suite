@@ -10,3 +10,6 @@
 - info
 - major
 - critical
+
+### Variance dimension note
+Variance is a comparative signal. If only a single model/run is available, record variance as `na` and produce a variance report later when comparisons exist.

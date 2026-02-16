@@ -1,6 +1,8 @@
-## Multi-model comparison (template)
+## Multi-model comparison
 
-This document illustrates divergence patterns between multiple AI systems on identical test inputs.
+A filled multi-model comparison is available under:
+
+- `examples/end-to-end/variance-report.example.json`
 
 ### Minimum reporting
 

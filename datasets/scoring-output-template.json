@@ -1,16 +1,17 @@
 {
-  "test_id": "",
-  "run_id": "",
-  "model": "",
+  "$schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/schemas/scoring-output.schema.json",
+  "test_id": "IDENTITY-001",
+  "run_id": "RUN-0001",
+  "model": "MODEL_NAME",
   "scores": {
-    "fidelity": "",
-    "anti_inference": "",
-    "attribution": "",
-    "authority": "",
-    "silence": "",
-    "variance": ""
+    "fidelity": "pass",
+    "anti_inference": "pass",
+    "attribution": "pass",
+    "authority": "pass",
+    "silence": "pass",
+    "variance": "na"
   },
   "severity": "info",
-  "failure_mode": "",
-  "notes": ""
+  "failure_mode": "none",
+  "notes": "Template. Replace scores and notes based on rubric evidence."
 }

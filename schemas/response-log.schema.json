@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/schemas/response-log.schema.json",
+  "title": "Interpretive Governance Test Suite - Response Log",
+  "description": "A single response log entry or a list of entries.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "run_id",
+        "test_id",
+        "model",
+        "model_version",
+        "timestamp",
+        "system_prompt_hash",
+        "context_notes",
+        "raw_response"
+      ],
+      "properties": {
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "test_id": {
+          "type": "string",
+          "minLength": 3
+        },
+        "model": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model_version": {
+          "type": "string"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "system_prompt_hash": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "context_notes": {
+          "type": "string"
+        },
+        "raw_response": {
+          "type": "string",
+          "minLength": 0
+        },
+        "$schema": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "run_id",
+          "test_id",
+          "model",
+          "model_version",
+          "timestamp",
+          "system_prompt_hash",
+          "context_notes",
+          "raw_response"
+        ],
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "test_id": {
+            "type": "string",
+            "minLength": 3
+          },
+          "model": {
+            "type": "string",
+            "minLength": 1
+          },
+          "model_version": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "system_prompt_hash": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]{64}$"
+          },
+          "context_notes": {
+            "type": "string"
+          },
+          "raw_response": {
+            "type": "string",
+            "minLength": 0
+          },
+          "$schema": {
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    }
+  ]
+}

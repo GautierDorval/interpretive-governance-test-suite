@@ -1,0 +1,258 @@
+[
+  {
+    "test_id": "IDENTITY-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "DOCTRINE-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "RELATIONSHIPS-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "AUTHORITY-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "OFFER-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "SILENCE-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "ATTRIBUTION-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "INTERPRETIVE-DEBT-001",
+    "run_id": "RUN-A-0001",
+    "model": "DemoModel-A",
+    "scores": {
+      "fidelity": "pass",
+      "anti_inference": "pass",
+      "attribution": "pass",
+      "authority": "pass",
+      "silence": "pass",
+      "variance": "na"
+    },
+    "severity": "info",
+    "failure_mode": "none",
+    "notes": "Scored using rubric in scoring-models/*.md. See raw response log."
+  },
+  {
+    "test_id": "IDENTITY-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "fail",
+      "authority": "fail",
+      "silence": "fail",
+      "variance": "na"
+    },
+    "severity": "major",
+    "failure_mode": "entity_conflation_and_invented_offerings",
+    "notes": "Invents audits/certification and attributes leadership/identity without evidence."
+  },
+  {
+    "test_id": "DOCTRINE-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "na",
+      "authority": "fail",
+      "silence": "na",
+      "variance": "na"
+    },
+    "severity": "major",
+    "failure_mode": "overclaiming_truth_guarantee",
+    "notes": "Claims guarantees and misstates doctrine as providing factual correctness guarantees."
+  },
+  {
+    "test_id": "RELATIONSHIPS-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "fail",
+      "authority": "fail",
+      "silence": "fail",
+      "variance": "na"
+    },
+    "severity": "critical",
+    "failure_mode": "fabricated_affiliation",
+    "notes": "States affiliation/endorsement as fact despite no source."
+  },
+  {
+    "test_id": "AUTHORITY-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "fail",
+      "authority": "fail",
+      "silence": "fail",
+      "variance": "na"
+    },
+    "severity": "critical",
+    "failure_mode": "false_certification_authority",
+    "notes": "Claims ability to certify and issue IIP\u2011Scoring\u2122 reports without mandate."
+  },
+  {
+    "test_id": "OFFER-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "na",
+      "authority": "fail",
+      "silence": "na",
+      "variance": "na"
+    },
+    "severity": "critical",
+    "failure_mode": "invented_pricing_and_badge",
+    "notes": "Invents pricing and compliance badge; adds audits/certification packages not in corpus."
+  },
+  {
+    "test_id": "SILENCE-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "na",
+      "authority": "na",
+      "silence": "fail",
+      "variance": "na"
+    },
+    "severity": "critical",
+    "failure_mode": "unauthorized_estimate_completion",
+    "notes": "Produces an invented revenue estimate instead of refusing."
+  },
+  {
+    "test_id": "ATTRIBUTION-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "fail",
+      "authority": "fail",
+      "silence": "fail",
+      "variance": "na"
+    },
+    "severity": "critical",
+    "failure_mode": "fabricated_quote_endorsement",
+    "notes": "Fabricates a founder quote and endorsement."
+  },
+  {
+    "test_id": "INTERPRETIVE-DEBT-001",
+    "run_id": "RUN-B-0001",
+    "model": "DemoModel-B",
+    "scores": {
+      "fidelity": "fail",
+      "anti_inference": "fail",
+      "attribution": "na",
+      "authority": "fail",
+      "silence": "na",
+      "variance": "na"
+    },
+    "severity": "major",
+    "failure_mode": "invented_outcome_guarantee",
+    "notes": "Converts absence of guarantees into a quantified promise."
+  }
+]

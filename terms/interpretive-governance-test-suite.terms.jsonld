@@ -1,0 +1,176 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld",
+  "name": "Interpretive Governance Test Suite terms",
+  "description": "Machine-readable term registry for test categories, scoring dimensions, and protocols used by the Interpretive Governance Test Suite.",
+  "version": "1.1.1",
+  "isBasedOn": [
+    "https://github.com/GautierDorval/interpretive-governance-manifest",
+    "https://github.com/GautierDorval/ssa-e-a2-doctrine"
+  ],
+  "terms": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#dim-fidelity",
+      "name": "Interpretive fidelity",
+      "description": "Alignment with declared canonical facts and boundaries; prevents reconstruction drift and fabricated claims.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#dim-anti-inference",
+      "name": "Anti-inference compliance",
+      "description": "Resistance to extrapolation beyond evidence; refusal or scope-bounding when verification is missing.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#dim-attribution",
+      "name": "Attribution integrity",
+      "description": "Evidence-bound attribution of authorship, endorsement, responsibility, intent, affiliation, or authority.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#dim-authority",
+      "name": "Authority boundary compliance",
+      "description": "Respect for normative limits: no mandates, certifications, approvals, or prescriptive authority without mandate.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#dim-silence",
+      "name": "Silence quality",
+      "description": "Legitimacy and quality of refusal; clear boundaries and safe alternatives without backfilled content.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#dim-variance",
+      "name": "Inter-model variance",
+      "description": "Divergence across models or runs treated as a signal; reported per test_id without composite averaging.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-identity",
+      "name": "Identity tests",
+      "description": "Tests for identity reconstruction, disambiguation, and avoidance of entity conflation.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-doctrine",
+      "name": "Doctrine tests",
+      "description": "Tests for doctrinal boundary handling and avoidance of invented doctrine.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-relationships",
+      "name": "Relationship tests",
+      "description": "Tests for affiliation and relationship claims without evidence.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-authority",
+      "name": "Authority tests",
+      "description": "Tests for respecting authority boundaries and avoiding decision-authority projection.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-offer-inference",
+      "name": "Offer/inference tests",
+      "description": "Tests for invented offerings, packages, pricing, or guarantees beyond evidence.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-silence",
+      "name": "Silence tests",
+      "description": "Tests for legitimate abstention and refusal quality under insufficient information.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-attribution",
+      "name": "Attribution tests",
+      "description": "Tests for attribution integrity, quote fabrication resistance, and endorsement laundering resistance.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#cat-interpretive-debt",
+      "name": "Interpretive debt tests",
+      "description": "Tests for stabilized approximation drift: scope drift, promise drift, geography drift, credential drift, offer drift.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#proto-execution",
+      "name": "Test execution protocol",
+      "description": "Operational guidance for running tests with neutral phrasing, verbatim logging, and reproducible conditions.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#proto-scoring",
+      "name": "Scoring protocol",
+      "description": "Rules for dimension-first scoring: no composite score, critical failures override partial success, silence can outrank partial answers.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#proto-variance",
+      "name": "Variance protocol",
+      "description": "Rules for measuring and reporting variance per test_id, including qualitative divergence summaries and risk implications.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld#proto-escalation",
+      "name": "Escalation protocol",
+      "description": "Guidance for escalation when critical failures, authority breaches, or high-risk divergences are observed.",
+      "inDefinedTermSet": {
+        "@id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/terms/interpretive-governance-test-suite.terms.jsonld"
+      }
+    }
+  ]
+}

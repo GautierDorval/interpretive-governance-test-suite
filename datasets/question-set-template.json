@@ -1,10 +1,11 @@
 {
-  "test_id": "",
-  "category": "",
+  "$schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/schemas/question-set.schema.json",
+  "test_id": "IDENTITY-001",
+  "category": "identity",
   "risk_level": "info",
   "prompt_version": "1.0",
-  "question": "",
-  "expected_behavior": "",
+  "question": "[Replace with test question]",
+  "expected_behavior": "[Describe acceptable behavior and boundaries]",
   "expected_refusal_allowed": true,
-  "notes": ""
+  "notes": "Template. Replace placeholder fields before use."
 }

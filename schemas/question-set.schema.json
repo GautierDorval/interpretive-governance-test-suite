@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/schemas/question-set.schema.json",
+  "title": "Interpretive Governance Test Suite - Question Set",
+  "description": "A single question item or a list of question items used in a test run.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "test_id",
+        "category",
+        "risk_level",
+        "prompt_version",
+        "question",
+        "expected_behavior",
+        "expected_refusal_allowed",
+        "notes"
+      ],
+      "properties": {
+        "test_id": {
+          "type": "string",
+          "minLength": 3
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "identity",
+            "doctrine",
+            "relationships",
+            "authority",
+            "offer_inference",
+            "silence",
+            "attribution",
+            "interpretive_debt"
+          ]
+        },
+        "risk_level": {
+          "type": "string",
+          "enum": [
+            "info",
+            "major",
+            "critical"
+          ]
+        },
+        "prompt_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expected_behavior": {
+          "type": "string",
+          "minLength": 1
+        },
+        "expected_refusal_allowed": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "test_id",
+          "category",
+          "risk_level",
+          "prompt_version",
+          "question",
+          "expected_behavior",
+          "expected_refusal_allowed",
+          "notes"
+        ],
+        "properties": {
+          "test_id": {
+            "type": "string",
+            "minLength": 3
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "identity",
+              "doctrine",
+              "relationships",
+              "authority",
+              "offer_inference",
+              "silence",
+              "attribution",
+              "interpretive_debt"
+            ]
+          },
+          "risk_level": {
+            "type": "string",
+            "enum": [
+              "info",
+              "major",
+              "critical"
+            ]
+          },
+          "prompt_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "question": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected_behavior": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected_refusal_allowed": {
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "$schema": {
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    }
+  ]
+}

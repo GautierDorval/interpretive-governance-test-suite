@@ -1,9 +1,11 @@
 {
-  "run_id": "",
-  "model": "",
-  "model_version": "",
-  "timestamp": "",
-  "system_prompt_hash": "",
-  "context_notes": "",
-  "raw_response": ""
+  "$schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/schemas/response-log.schema.json",
+  "run_id": "RUN-0001",
+  "test_id": "IDENTITY-001",
+  "model": "MODEL_NAME",
+  "model_version": "MODEL_VERSION",
+  "timestamp": "2026-02-09T00:00:00Z",
+  "system_prompt_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+  "context_notes": "Template. Include tool/environment notes, retrieval constraints, and any relevant run conditions.",
+  "raw_response": "[Paste raw model response verbatim]"
 }

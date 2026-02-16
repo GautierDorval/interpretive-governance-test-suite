@@ -1,0 +1,562 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/schemas/variance-report.schema.json",
+  "title": "Interpretive Governance Test Suite - Variance Report",
+  "description": "Variance report for a given test_id across models/runs.",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "test_id",
+        "models",
+        "entries",
+        "divergence_summary",
+        "diverging_dimensions",
+        "risk_implication",
+        "notes"
+      ],
+      "properties": {
+        "test_id": {
+          "type": "string",
+          "minLength": 3
+        },
+        "models": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 2
+        },
+        "entries": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "model",
+              "run_id",
+              "response_excerpt",
+              "scores"
+            ],
+            "properties": {
+              "model": {
+                "type": "string",
+                "minLength": 1
+              },
+              "run_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "response_excerpt": {
+                "type": "string"
+              },
+              "scores": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "fidelity",
+                  "anti_inference",
+                  "attribution",
+                  "authority",
+                  "silence",
+                  "variance"
+                ],
+                "properties": {
+                  "fidelity": {
+                    "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "pass",
+                          "fail",
+                          "na"
+                        ]
+                      },
+                      {
+                        "type": "integer",
+                        "enum": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "type": "string",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ]
+                      }
+                    ]
+                  },
+                  "anti_inference": {
+                    "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "pass",
+                          "fail",
+                          "na"
+                        ]
+                      },
+                      {
+                        "type": "integer",
+                        "enum": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "type": "string",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ]
+                      }
+                    ]
+                  },
+                  "attribution": {
+                    "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "pass",
+                          "fail",
+                          "na"
+                        ]
+                      },
+                      {
+                        "type": "integer",
+                        "enum": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "type": "string",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ]
+                      }
+                    ]
+                  },
+                  "authority": {
+                    "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "pass",
+                          "fail",
+                          "na"
+                        ]
+                      },
+                      {
+                        "type": "integer",
+                        "enum": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "type": "string",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ]
+                      }
+                    ]
+                  },
+                  "silence": {
+                    "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "pass",
+                          "fail",
+                          "na"
+                        ]
+                      },
+                      {
+                        "type": "integer",
+                        "enum": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "type": "string",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ]
+                      }
+                    ]
+                  },
+                  "variance": {
+                    "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                    "oneOf": [
+                      {
+                        "type": "string",
+                        "enum": [
+                          "pass",
+                          "fail",
+                          "na"
+                        ]
+                      },
+                      {
+                        "type": "integer",
+                        "enum": [
+                          0,
+                          1,
+                          2
+                        ]
+                      },
+                      {
+                        "type": "string",
+                        "enum": [
+                          "low",
+                          "medium",
+                          "high"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "divergence_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "diverging_dimensions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "fidelity",
+              "anti_inference",
+              "attribution",
+              "authority",
+              "silence",
+              "variance"
+            ]
+          },
+          "minItems": 1
+        },
+        "risk_implication": {
+          "type": "string",
+          "enum": [
+            "info",
+            "major",
+            "critical"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      }
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "test_id",
+          "models",
+          "entries",
+          "divergence_summary",
+          "diverging_dimensions",
+          "risk_implication",
+          "notes"
+        ],
+        "properties": {
+          "test_id": {
+            "type": "string",
+            "minLength": 3
+          },
+          "models": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 2
+          },
+          "entries": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "model",
+                "run_id",
+                "response_excerpt",
+                "scores"
+              ],
+              "properties": {
+                "model": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "run_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "response_excerpt": {
+                  "type": "string"
+                },
+                "scores": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "fidelity",
+                    "anti_inference",
+                    "attribution",
+                    "authority",
+                    "silence",
+                    "variance"
+                  ],
+                  "properties": {
+                    "fidelity": {
+                      "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "na"
+                          ]
+                        },
+                        {
+                          "type": "integer",
+                          "enum": [
+                            0,
+                            1,
+                            2
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "low",
+                            "medium",
+                            "high"
+                          ]
+                        }
+                      ]
+                    },
+                    "anti_inference": {
+                      "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "na"
+                          ]
+                        },
+                        {
+                          "type": "integer",
+                          "enum": [
+                            0,
+                            1,
+                            2
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "low",
+                            "medium",
+                            "high"
+                          ]
+                        }
+                      ]
+                    },
+                    "attribution": {
+                      "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "na"
+                          ]
+                        },
+                        {
+                          "type": "integer",
+                          "enum": [
+                            0,
+                            1,
+                            2
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "low",
+                            "medium",
+                            "high"
+                          ]
+                        }
+                      ]
+                    },
+                    "authority": {
+                      "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "na"
+                          ]
+                        },
+                        {
+                          "type": "integer",
+                          "enum": [
+                            0,
+                            1,
+                            2
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "low",
+                            "medium",
+                            "high"
+                          ]
+                        }
+                      ]
+                    },
+                    "silence": {
+                      "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "na"
+                          ]
+                        },
+                        {
+                          "type": "integer",
+                          "enum": [
+                            0,
+                            1,
+                            2
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "low",
+                            "medium",
+                            "high"
+                          ]
+                        }
+                      ]
+                    },
+                    "variance": {
+                      "$comment": "Score values are intentionally simple to keep this open instrument auditable. Use notes to justify scoring.",
+                      "oneOf": [
+                        {
+                          "type": "string",
+                          "enum": [
+                            "pass",
+                            "fail",
+                            "na"
+                          ]
+                        },
+                        {
+                          "type": "integer",
+                          "enum": [
+                            0,
+                            1,
+                            2
+                          ]
+                        },
+                        {
+                          "type": "string",
+                          "enum": [
+                            "low",
+                            "medium",
+                            "high"
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "divergence_summary": {
+            "type": "string",
+            "minLength": 1
+          },
+          "diverging_dimensions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "fidelity",
+                "anti_inference",
+                "attribution",
+                "authority",
+                "silence",
+                "variance"
+              ]
+            },
+            "minItems": 1
+          },
+          "risk_implication": {
+            "type": "string",
+            "enum": [
+              "info",
+              "major",
+              "critical"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          },
+          "$schema": {
+            "type": "string"
+          }
+        }
+      },
+      "minItems": 1
+    }
+  ]
+}

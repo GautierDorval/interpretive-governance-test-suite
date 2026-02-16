@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this framework in research or governance audits, please cite it."
 title: "Interpretive Governance Test Suite"
-version: "1.0.0"
-date-released: "2026-02-09"
+version: "1.1.1"
+date-released: "2026-02-16"
 authors:
   - family-names: "Dorval"
     given-names: "Gautier"
@@ -15,3 +15,5 @@ keywords:
   - "attribution"
   - "authority boundary"
   - "anti-inference"
+  - "interpretive debt"
+  - "Q-Layer"

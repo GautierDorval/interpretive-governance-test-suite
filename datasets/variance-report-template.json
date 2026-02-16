@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/GautierDorval/interpretive-governance-test-suite/v1.1.1/schemas/variance-report.schema.json",
+  "test_id": "IDENTITY-001",
+  "models": [
+    "MODEL_A",
+    "MODEL_B"
+  ],
+  "entries": [
+    {
+      "model": "MODEL_A",
+      "run_id": "RUN-0001",
+      "response_excerpt": "[Short excerpt]",
+      "scores": {
+        "fidelity": "pass",
+        "anti_inference": "pass",
+        "attribution": "pass",
+        "authority": "pass",
+        "silence": "pass",
+        "variance": "low"
+      }
+    },
+    {
+      "model": "MODEL_B",
+      "run_id": "RUN-0002",
+      "response_excerpt": "[Short excerpt]",
+      "scores": {
+        "fidelity": "pass",
+        "anti_inference": "pass",
+        "attribution": "pass",
+        "authority": "pass",
+        "silence": "pass",
+        "variance": "low"
+      }
+    }
+  ],
+  "divergence_summary": "Template. Describe what diverges and why it matters.",
+  "diverging_dimensions": [
+    "variance"
+  ],
+  "risk_implication": "info",
+  "notes": "Template."
+}

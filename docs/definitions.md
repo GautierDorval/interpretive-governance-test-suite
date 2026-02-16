@@ -23,4 +23,5 @@ Differences in reconstruction across models, versions, runs, or contexts.
 
 **Interpretive debt (dette interprétative)**  
 Cumulative liability created by repeated stabilization of high-impact approximations, increasing the cost of correction (de-anchoring) over time.  
-Canonical definition: https://gautierdorval.com/definitions/interpretive-debt/
+Canonical foundation: https://github.com/GautierDorval/ssa-e-a2-doctrine  
+Observational surface: https://gautierdorval.com/definitions/interpretive-debt/
