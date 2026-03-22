@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+- Added CI workflow (`.github/workflows/ci-validate.yml`) with push + PR triggers.
+- Added `.gitignore`.
+- Added pinned `scripts/requirements.txt` (`jsonschema==4.23.0`).
+- Extended `validate_repo.py` to validate JSON syntax for all JSON/JSON-LD files (schemas, terms).
+
+---
+
 ## [1.1.1] — 2026-02-16 — Adoption hardening + reproducibility upgrades
 
 ### Added

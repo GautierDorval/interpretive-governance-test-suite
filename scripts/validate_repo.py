@@ -82,10 +82,27 @@ def check_scoring_models_present():
             problems.append(f"Missing scoring model file: scoring-models/{fname}")
     return problems
 
+def check_all_json_syntax():
+    """Validate JSON syntax for all tracked JSON/JSON-LD files."""
+    problems = []
+    for pattern in ("**/*.json", "**/*.jsonld"):
+        for p in REPO_ROOT.rglob(pattern):
+            if ".git" in p.parts:
+                continue
+            try:
+                load_json(p)
+            except Exception as e:
+                problems.append(f"JSON syntax error: {p.relative_to(REPO_ROOT)} ({e})")
+    return problems
+
+
 def main():
     problems = []
 
-    # JSON syntax + schema validation for datasets and examples
+    # JSON syntax for all JSON/JSON-LD files (schemas, terms, datasets, examples)
+    problems.extend(check_all_json_syntax())
+
+    # Schema validation for datasets and examples
     json_files = []
     for p in (REPO_ROOT / "datasets").glob("*.json"):
         json_files.append(p)
