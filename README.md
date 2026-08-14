@@ -1,6 +1,6 @@
 # Interpretive Governance Test Suite
 
-This repository defines a **normative test framework** for evaluating how AI systems interpret, reconstruct, and attribute entities, doctrines, and authority boundaries.
+This repository provides a **non-normative test instrument** for evaluating how AI systems interpret, reconstruct, and attribute entities, doctrines, and authority boundaries.
 
 It does **not** measure visibility.  
 It measures **interpretive integrity**.
@@ -23,9 +23,9 @@ This repository provides:
 
 ## What this repository is
 
-- A normative test framework
 - A governance measurement instrument
-- An interpretive audit reference
+- A reproducible interpretive audit harness
+- An instrument applied to an exact standard reference
 
 ## What this repository is not
 
@@ -33,6 +33,8 @@ This repository provides:
 - Not an SEO / GEO system
 - Not an “AI visibility” metric
 - Not a prompt-engineering toolkit
+- Not a certification, endorsement, or approval authority
+- Not an authority that establishes conformance or changes the standard
 
 ## Core principles
 
@@ -64,6 +66,12 @@ This repository is an **instrument**. It is derived from, and must defer to, can
 
 Implementation surfaces (including websites) are **observational** unless explicitly declared canonical by the sources above.
 
+Every run is bounded by `references/standard-reference.json`, validated against
+the closed `schemas/standard-reference.schema.json`. The reference pins the
+standard repository, release status, commit, tree, and canonical manifest
+digest. A run result applies only to that exact reference and its declared test
+envelope. It is evidence, not certification or a general conformance verdict.
+
 See: `references/interpretive-governance.md`.
 
 ## Relationship to IIP‑Scoring™
@@ -89,10 +97,19 @@ It includes:
 Schemas to validate these artifacts:
 - `schemas/`
 
-Run local validation:
-```bash
-python -m pip install jsonschema
-python scripts/validate_repo.py
+Run local validation in PowerShell:
+
+```powershell
+python -m pip install -r .\scripts\requirements.txt
+python .\scripts\validate_repo.py
+```
+
+To verify the reference against an exact local clone of the standard as well as
+the closed JSON envelope:
+
+```powershell
+$standardRepo = "C:\path\to\interpretive-governance-manifest"
+python .\scripts\validate_repo.py --self-test-standard-reference --standard-repository $standardRepo
 ```
 
 ## Interpretive debt → measurement → protocol
@@ -107,7 +124,9 @@ Interpretive debt signals often appear as **high stability of a wrong frame**, n
 
 Licensed under **Apache-2.0**. See `LICENSE`.
 
-This license grants permission to use and modify the materials. However, the **scope** and **non-goals** of this framework remain normative:
+This license grants permission to use and modify the materials. However, the
+**scope** and **non-goals** of this instrument remain binding on claims made
+about its own results:
 
 - This framework is not intended to generate “visibility scores”, rankings, or commercial guarantees.
 - Any use implying marketing performance claims is out of scope (see `docs/non-goals.md`).

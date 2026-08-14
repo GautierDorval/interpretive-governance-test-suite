@@ -2,6 +2,13 @@
 
 ## Unreleased
 
+- Added a closed, immutable reference envelope for the exact Interpretive
+  Governance standard snapshot used by this instrument.
+- Added optional local Git verification of the pinned standard remote, commit,
+  tree, release status, canonical manifest digest, and byte length.
+- Added positive and negative schema self-tests for reference-envelope closure.
+- Clarified that suite results are bounded evidence, not certification,
+  endorsement, approval, or a general conformance verdict.
 - Added CI workflow (`.github/workflows/ci-validate.yml`) with push + PR triggers.
 - Added `.gitignore`.
 - Added pinned `scripts/requirements.txt` (`jsonschema==4.23.0`).

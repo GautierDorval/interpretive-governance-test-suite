@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/GautierDorval/interpretive-governance-manifest",
+  "release": null,
+  "referenceStatus": "unreleased-snapshot",
+  "commit": "1f217667b7d3fe8e7f038b254949b9be6f7ff2b6",
+  "tree": "e2851480b5e4caeaa49b3e58250978e7c3ea1599",
+  "manifestDigest": {
+    "algorithm": "sha256",
+    "value": "47019FDB6881D648306B3BF2675988352F49B663A8499AD46EFBE849A878488C",
+    "length": 16882
+  }
+}
