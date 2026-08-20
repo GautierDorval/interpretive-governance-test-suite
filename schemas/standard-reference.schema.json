@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:interpretive-governance-test-suite:schema:standard-reference:v1",
+  "title": "Exact Interpretive Governance standard reference",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "repository",
+    "release",
+    "commit",
+    "tree",
+    "manifestDigest"
+  ],
+  "properties": {
+    "repository": {
+      "const": "https://github.com/GautierDorval/interpretive-governance-manifest"
+    },
+    "release": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+(?:[-+][A-Za-z0-9.-]+)?$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "referenceStatus": {
+      "enum": [
+        "unreleased-snapshot"
+      ]
+    },
+    "commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "tree": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "manifestDigest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "value",
+        "length"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "sha256"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-F0-9]{64}$"
+        },
+        "length": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "release": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "release"
+        ]
+      },
+      "then": {
+        "required": [
+          "referenceStatus"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "referenceStatus"
+          ]
+        }
+      }
+    }
+  ]
+}
