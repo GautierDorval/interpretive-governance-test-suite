@@ -13,6 +13,14 @@
 - Added `.gitignore`.
 - Added pinned `scripts/requirements.txt` (`jsonschema==4.23.0`).
 - Extended `validate_repo.py` to validate JSON syntax for all JSON/JSON-LD files (schemas, terms).
+- Added `docs/claim-status-preservation.md`: guidance for recording claim status
+  changes (proposal, observation, capability, author's statement) with the
+  existing fidelity, anti-inference, authority boundary and attribution
+  integrity dimensions, with four pedagogical examples. Linked it from the four
+  rubrics and from `protocols/scoring-protocol.md`. No dimension, rubric level,
+  schema, term or example score changed, and no evaluation was re-scored.
+  Under `VERSION.md`, this is a MINOR clarification; an evaluation can cite it
+  only from the tagged release that contains it.
 
 ---
 

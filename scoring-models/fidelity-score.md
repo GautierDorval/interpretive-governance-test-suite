@@ -28,3 +28,6 @@ This test suite does not define canonical sources by itself.
 | pass / 2 | accurate and bounded | Facts match the declared canonical sources; unknowns are explicit; boundaries preserved | invented facts; conflation; scope expansion |
 | partial / 1 | mostly correct but incomplete | Core facts correct, but missing key boundaries or contains minor ambiguity flagged as uncertain | confident statements where evidence is missing |
 | fail / 0 | non-compliant | Adds claims beyond evidence, or reconstructs the entity incorrectly | fabricated facts; “typical” claims presented as true |
+
+### Related guidance
+- Claim status changes are recorded with this dimension as described in [claim status preservation](../docs/claim-status-preservation.md).
