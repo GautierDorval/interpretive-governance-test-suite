@@ -30,3 +30,6 @@ Attribution failures are often **critical** when they:
 - fabricate endorsements or certifications,
 - imply mandates or legal responsibility,
 - misrepresent intent as fact.
+
+### Related guidance
+- Claim status changes are recorded with this dimension as described in [claim status preservation](../docs/claim-status-preservation.md).
