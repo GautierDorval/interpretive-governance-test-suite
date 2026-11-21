@@ -21,6 +21,10 @@
   schema, term or example score changed, and no evaluation was re-scored.
   Under `VERSION.md`, this is a MINOR clarification; an evaluation can cite it
   only from the tagged release that contains it.
+- Linked `docs/claim-status-preservation.md` to the reconstruction fidelity
+  entry pages (English and French) on gautierdorval.com and to the
+  terminology note and fidelity term map of the Interpretive Governance
+  manifest repository.
 
 ---
 

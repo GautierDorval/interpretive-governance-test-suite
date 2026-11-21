@@ -15,7 +15,7 @@ Interpretive fidelity includes the preservation of that status. This guide expla
 - [Authority boundary](../scoring-models/authority-boundary-score.md)
 - [Attribution integrity](../scoring-models/attribution-integrity-score.md)
 
-Concept reference: the author's [interpretive fidelity definition](https://gautierdorval.com/en/definitions/interpretive-fidelity/) (French: [fidélité interprétative](https://gautierdorval.com/definitions/fidelite-interpretative/)). This reference explains the concept; it does not change this suite's rubrics.
+Concept reference: the author's [interpretive fidelity definition](https://gautierdorval.com/en/definitions/interpretive-fidelity/) (French: [fidélité interprétative](https://gautierdorval.com/definitions/fidelite-interpretative/)) and the [reconstruction fidelity entry page](https://gautierdorval.com/en/reconstruction-fidelity/) (French: [fidélité de reconstruction](https://gautierdorval.com/fidelite-de-reconstruction/)). Terminology: the [reconstruction fidelity note](https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/concepts/reconstruction-fidelity.md) and the [fidelity term map](https://github.com/GautierDorval/interpretive-governance-manifest/blob/main/concepts/fidelity-term-map.md) in the Interpretive Governance manifest repository. These references explain the concept; they do not change this suite's rubrics.
 
 ### Status changes covered
 
