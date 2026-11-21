@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Corrected the description of the IIP‑Scoring™ interface repository in
+  `README.md` and `docs/iip-scoring-relationship.md`: it is private and not
+  publicly accessible. Added its public doctrinal description instead.
+  Editorial correction; no scoring logic changed.
 - Added a closed, immutable reference envelope for the exact Interpretive
   Governance standard snapshot used by this instrument.
 - Added optional local Git verification of the pinned standard remote, commit,

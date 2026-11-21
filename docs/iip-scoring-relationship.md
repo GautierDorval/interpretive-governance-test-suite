@@ -44,5 +44,7 @@ Interpretive debt tests typically manifest as a combined pattern:
 
 ### Where to go next
 
-- IIP‑Scoring™ public interface repository:  
-  https://github.com/GautierDorval/iip-scoring-standard
+- IIP‑Scoring™ interface repository: `GautierDorval/iip-scoring-standard`  
+  (private, not publicly accessible)
+- IIP‑Scoring™ public doctrinal description, without the scoring logic:  
+  https://gautierdorval.com/en/iip-scoring-doctrinal-framework/
