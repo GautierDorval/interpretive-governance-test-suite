@@ -1,22 +1,16 @@
 # Changelog
 
-## Unreleased
+## [1.2.0] — 2026-11-23 — Claim status guidance + exact standard reference
 
-- Corrected the description of the IIP‑Scoring™ interface repository in
-  `README.md` and `docs/iip-scoring-relationship.md`: it is private and not
-  publicly accessible. Added its public doctrinal description instead.
-  Editorial correction; no scoring logic changed.
+### Added
 - Added a closed, immutable reference envelope for the exact Interpretive
   Governance standard snapshot used by this instrument.
 - Added optional local Git verification of the pinned standard remote, commit,
   tree, release status, canonical manifest digest, and byte length.
 - Added positive and negative schema self-tests for reference-envelope closure.
-- Clarified that suite results are bounded evidence, not certification,
-  endorsement, approval, or a general conformance verdict.
 - Added CI workflow (`.github/workflows/ci-validate.yml`) with push + PR triggers.
 - Added `.gitignore`.
-- Added pinned `scripts/requirements.txt` (`jsonschema==4.23.0`).
-- Extended `validate_repo.py` to validate JSON syntax for all JSON/JSON-LD files (schemas, terms).
+- Added pinned `scripts/requirements.txt` (`jsonschema==4.26.0`).
 - Added `docs/claim-status-preservation.md`: guidance for recording claim status
   changes (proposal, observation, capability, author's statement) with the
   existing fidelity, anti-inference, authority boundary and attribution
@@ -25,12 +19,21 @@
   schema, term or example score changed, and no evaluation was re-scored.
   Under `VERSION.md`, this is a MINOR clarification; an evaluation can cite it
   only from the tagged release that contains it.
+
+### Changed
+- Clarified that suite results are bounded evidence, not certification,
+  endorsement, approval, or a general conformance verdict.
+- Extended `validate_repo.py` to validate JSON syntax for all JSON/JSON-LD files (schemas, terms).
 - Linked `docs/claim-status-preservation.md` to the reconstruction fidelity
   entry pages (English and French) on gautierdorval.com and to the
   terminology note and fidelity term map of the Interpretive Governance
   manifest repository.
 
----
+### Fixed
+- Corrected the description of the IIP‑Scoring™ interface repository in
+  `README.md` and `docs/iip-scoring-relationship.md`: it is private and not
+  publicly accessible. Added its public doctrinal description instead.
+  Editorial correction; no scoring logic changed.
 
 ## [1.1.1] — 2026-02-16 — Adoption hardening + reproducibility upgrades
 

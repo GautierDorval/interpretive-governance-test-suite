@@ -1,7 +1,7 @@
 ## Claim status preservation
 
 **Role:** guidance for applying the existing scoring dimensions. It adds no dimension, rubric level, threshold or composite score.  
-**Version:** introduced after release 1.1.1 and listed under `Unreleased` in `CHANGELOG.md`. Under `VERSION.md`, it is a MINOR clarification; an evaluation can cite it only from the tagged release that contains it.  
+**Version:** introduced in release 1.2.0 (see `CHANGELOG.md`). Under `VERSION.md`, it is a MINOR clarification; an evaluation can cite it only from the tagged release that contains it.  
 **Rescoring:** none. Adding this guidance changed no evaluation result, example score or DemoModel output.
 
 ### Purpose
